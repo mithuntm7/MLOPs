@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mithun.tm/IISc/MLOPs DA212/Projects/MLOPs-master'
+python3 -m venv ~/.MLOps
+#source ~/.MLOps/bin/activate
+make: Leaving directory `/Users/mithun.tm/IISc/MLOPs DA212/Projects/MLOPs-master'
+ 

@@ -1,0 +1,24 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: src/train.py
+      md5: eb736292839af81415ca0aa521ec5117
+      size: 1017
+  test:
+    cmd: python src/test.py
+    deps:
+    - path: models/saved_model
+      md5: f06900755daf9474e0b12086530cff2a
+      size: 6293
+    - path: reports/train_metrics.txt
+      md5: d5da90fdc4e440dce3282550afb2ba7f
+      size: 25
+    - path: src/test.py
+      md5: 7739ae8dbd50d109207255d95d9ae534
+      size: 858
+    outs:
+    - path: reports/test_metrics.json
+      md5: f473997694d659d78c7082c6686a7501
+      size: 45
